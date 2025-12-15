@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "TESTINGMYMCP": {
+      "url": "${env:MCP_SERVER_URL}",
+      "type": "http"
+    }
+  },
+  "inputs": []
+}
