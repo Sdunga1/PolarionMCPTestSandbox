@@ -6,7 +6,7 @@
   "remoteEnv": {
     "MCP_SERVER_URL": "http://localhost:3000"
   },
-  "postCreateCommand": "bash -lc 'npm install -g @modelcontextprotocol/cli && mkdir -p .vscode && cp .devcontainer/settings.json .vscode/settings.json'",
+  "postCreateCommand": "bash -lc 'curl -Ls https://astral.sh/uv/install.sh | sh && npm install -g @modelcontextprotocol/cli && mkdir -p .vscode && cp .devcontainer/settings.json .vscode/settings.json'",
   "customizations": {
     "vscode": {
       "extensions": ["GitHub.copilot", "github.copilot-chat"],

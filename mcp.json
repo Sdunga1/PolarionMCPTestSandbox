@@ -1,9 +1,19 @@
 {
   "servers": {
-    "TESTINGMYMCP": {
-      "url": "${env:MCP_SERVER_URL}",
-      "type": "http"
+    "polarionmcp-demo": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["polarion-mcp==2.0.0", "polarion-mcp"],
+      "env": {
+        "POLARION_BASE_URL": "${input:baseUrl}"
+      }
     }
   },
-  "inputs": []
+  "inputs": [
+    {
+      "id": "baseUrl",
+      "type": "promptString",
+      "description": "POLARION_BASE_URL (leave blank to use default http://dev.polarion.atoms.tech/polarion)"
+    }
+  ]
 }
