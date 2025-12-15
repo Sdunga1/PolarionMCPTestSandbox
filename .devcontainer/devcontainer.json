@@ -9,7 +9,7 @@
   "postCreateCommand": "bash -lc 'npm install -g @modelcontextprotocol/cli && mkdir -p .vscode && cp .devcontainer/settings.json .vscode/settings.json'",
   "customizations": {
     "vscode": {
-      "extensions": ["GitHub.copilot", "your-org.mcp-bridge-extension"],
+      "extensions": ["GitHub.copilot", "github.copilot-chat"],
       "settings": {
         "mcp.configPath": "${workspaceFolder}/mcp.json"
       }
