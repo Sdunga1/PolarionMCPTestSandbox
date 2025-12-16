@@ -1,21 +1,9 @@
 {
-	"servers": {
-		"polarionmcp-demo": {
-			"command": "uvx",
-			"args": [
-				"polarion-mcp==2.0.0"
-			],
-			"env": {
-				"POLARION_BASE_URL": "${input:base_url}"
-			},
-			"type": "stdio"
-		}
-	},
-	"inputs": [
-		{
-			"id": "base_url",
-			"type": "promptString",
-			"description": "POLARION_BASE_URL (leave blank to use default http://dev.polarion.atoms.tech/polarion)"
-		}
-	]
+  "servers": {
+    "PolarionMCP-Demo": {
+      "url": "${env:MCP_SERVER_URL}",
+      "type": "http"
+    }
+  },
+  "inputs": []
 }
